@@ -1,0 +1,201 @@
+* {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: hsl(189, 41%, 97%);   /* Very light grayish cyan */
+}
+
+input:focus {
+    outline: none;
+}
+
+body, html {
+    min-height: 945.41px;
+    min-width: 375px;
+    height: 100%;
+}
+
+body {
+    padding: 40% 0 0 0;
+    background-color: hsl(185, 41%, 84%);  /*light greyish cyan*/
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/logo.svg');
+    background-size: 20% contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position-y: 5%;    
+}
+
+main {
+    background-color: white;
+    width: 375px;
+    height: fit-content;
+}
+
+main, .right {
+    border-radius: 0.7rem;
+}
+
+.procent, button, input {
+    width: 100%;
+}
+
+body, main, .left, .right, .bill, .tip, .people, .amount, .total, .procent,
+.reset, .amount-para, .total-para, .people-input, .bill-input, .img, .left-input, .right-input {
+    display: flex;
+}
+
+main, .right, .left, .bill, .tip, .people, .total-para, .amount-para {
+    flex-direction: column;
+}
+
+.bill-input, .people-input, .amount, .total, .procent {
+    flex-direction: row;
+}
+
+.procent {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.five, .ten, .fifteen, .twentyfive, .fifty, .custom {
+    width: 47%;
+    margin: 1.5%;
+}
+
+button {
+    padding: 4% 0;  
+    border-radius: 0.3rem;
+}
+
+.left, .right {
+    padding: 10% 7%;
+}
+
+.left {
+    border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.right, .right input, .left button {
+    background-color:hsl(183, 100%, 15%);  /*very dark cyan*/
+}
+
+.bill-input, .people-input, input {
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 0.5rem;
+}
+
+.left p {
+    font-size: 0.7rem;
+    color: hsl(186, 14%, 43%);   /* Dark greyish cyan */
+    margin-bottom: 0.4rem;
+}
+
+input {
+    text-align: right;
+}
+
+input, .right button, .left ::placeholder, #custom-input{
+    color: hsl(183, 100%, 15%);
+}
+
+.left p, .right span {
+    font-size: 0.7rem;
+}
+
+input, .img {
+    padding: 2%;
+}
+
+.bill, .tip, .amount, .total {
+    margin-bottom: 10%;
+}
+
+.img {
+    flex-basis: 20%;
+}
+
+.left-input {
+    flex-basis: 80%;
+}
+
+.img img {
+    height: 0.7rem;
+    align-self: center;
+    padding-left: 20%;
+}
+
+.amount-para, .total-para, .right-input {
+    flex-basis: 50%;
+}
+
+.right p {
+    font-size: 0.5rem;
+    color: hsl(184, 14%, 56%);    /* Grayish cyan */
+}
+
+.right input, .right ::placeholder {
+    color: hsl(172, 67%, 45%);     /* Strong cyan */
+}
+
+.right button, .left button:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.left button:hover, .right button:hover {
+    cursor: pointer;
+}
+
+.right button:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+#para {
+    color: red;
+    font-size: 0.6rem;
+}
+
+@media (min-width: 800px){
+    main {
+        flex-direction: row;
+        width: 800px;
+        padding: 2%;
+    }
+
+    body, html {
+        min-height: 945.41px;
+        min-width: 800px;
+    }
+
+    .left, .right {
+        flex-basis: 50%;
+    }
+
+    .left {
+        padding: 5%;
+    }
+
+    .right {
+        padding: 10% 5% 5% 5%;
+    }
+
+    body {
+        padding: 0;
+        background-position-y: 12%;    
+    }
+
+    .five, .ten, .fifteen, .twentyfive, .fifty, .custom {
+        width: 30%;
+        margin: 1.5%;
+    }
+
+    .left button {
+        font-size: 0.8rem;
+        padding: 7% 0;
+    }
+}
