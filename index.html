@@ -6,103 +6,14 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
   <script src="./jscript.js"></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
   <body>
     <main>
-
-      <div class="left">
-
-        <div class="bill">
-          <div>
-            <p> Bill </p>
-          </div>
-          <div id="bill-input" class="bill-input">
-            <div class="img">
-              <img src="./images/icon-dollar.svg" alt="dollar">
-            </div>
-            <div class="left-input">
-              <input onkeyup="checkNum()" id="bill" placeholder="0" type="text">
-            </div>
-          </div>
-        </div>
-
-        <div class="tip">
-          <div>
-            <p> Select Tip % </p>
-          </div>
-          <div class="procent">
-            <div class="five">
-              <button onclick="tip5()"> 5% </button>
-            </div>
-            <div class="ten">
-              <button onclick="tip10()"> 10% </button>
-            </div>
-            <div class="fifteen">
-              <button onclick="tip15()"> 15% </button>
-            </div>
-            <div class="twentyfive">
-              <button onclick="tip25()"> 25% </button>
-            </div>
-            <div class="fifty">
-              <button onclick="tip50()"> 50% </button>
-            </div>
-            <div id='custom' class="custom">
-              <button id='custom-button' onclick="custom()" > Custom </button>
-            </div>
-          </div>
-        </div>
-
-        <div id="people-input" class="people">
-          <div>
-            <p> Number of People </p>
-          </div>
-          <div id="input-div" class="people-input">
-            <div class="img">
-              <img src="./images/icon-person.svg" alt="dollar">
-            </div>
-            <div class="left-input">
-              <input id="people" onkeyup="peopleCount()" placeholder="0" type="text">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="right">
-
-        <div class="amount">
-          <div class="amount-para">
-            <p> <span> Tip Amount </span></p>
-            <p> / person </p>
-          </div>
-          <div id="tip-input" class="right-input">
-            <input id="tip" placeholder="$0" type="text" disabled>
-          </div>
-        </div>
-
-        <div class="total"> 
-          <div class="total-para">
-            <p> <span> Total </span></p>
-            <p> / person </p>
-          </div>
-          <div id="total-input" class="right-input">
-            <input id="total" placeholder="$0" type="text" disabled>
-          </div>
-        </div>
-
-        <div class="reset">
-          <button onclick="reseted()"> RESET </button>
-        </div>
-
-      </div>
-
+      <div class="text"> dawadw da wdaw daw d awd ada wd aw daw daw dwa ddwa wda wda govnisa fee afae fea fae eaf eaf eafaef aefef aef aefa  fae efa ef a efaf aeaf eaef aef a fa dawadw da wdaw daw d awd ada wd aw daw daw dwa ddw awd awda dawadw da wdaw daw d awd ada wd aw daw daw d daw d awd ada wd aw daw daw daw d awd ada wd aw daw daw daw d awd ada wd aw daw dawwa dd wawda wda dawadw da wdaw daw d awd ada wd aw daw daw dwa ddw awda mainwda aa ef</div>
     </main>
   </body>
 </html>
